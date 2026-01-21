@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-09 17:27:11.714417",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "parameter",
+  "reference_field",
+  "static_value"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "parameter",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Parameter",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "reference_field",
+   "fieldtype": "Autocomplete",
+   "in_list_view": 1,
+   "label": "Reference Field"
+  },
+  {
+   "columns": 7,
+   "fieldname": "static_value",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Static Value"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-12 11:01:32.355893",
+ "modified_by": "Administrator",
+ "module": "Onbbits Integration",
+ "name": "Template Trigger Parameter",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

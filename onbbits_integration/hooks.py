@@ -137,18 +137,23 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"*": {
+        "before_insert":
+            "onbbits_integration.api.validate_onbbits_event",
+        "on_update":
+            "onbbits_integration.api.validate_onbbits_event",
+        "on_submit":
+            "onbbits_integration.api.validate_onbbits_event",
+        "on_cancel":
+            "onbbits_integration.api.validate_onbbits_event",
+    }
+}
 
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
 # 	"all": [
 # 		"onbbits_integration.tasks.all"
 # 	],
@@ -164,7 +169,10 @@ app_license = "mit"
 # 	"monthly": [
 # 		"onbbits_integration.tasks.monthly"
 # 	],
-# }
+    "hourly": [
+        "onbbits_integration.onbbits_api.sync_template_status"
+    ]
+}
 
 # Testing
 # -------
@@ -247,3 +255,4 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+fixtures = ["Template Category"]

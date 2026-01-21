@@ -1,0 +1,250 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{template_name}-{app_abb}",
+ "creation": "2025-12-09 16:34:21.727628",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "app_name",
+  "template_name",
+  "category",
+  "language",
+  "api_key",
+  "api_url",
+  "column_break_aylg",
+  "status",
+  "app_abb",
+  "disabled",
+  "template_type",
+  "header_text",
+  "header_parameter",
+  "format",
+  "source",
+  "section_break_bdxc",
+  "body_text",
+  "column_break_rkms",
+  "body_preview",
+  "template_footer_section",
+  "footer_text",
+  "template_parameters",
+  "template_buttons",
+  "section_break_q1sz",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_q1sz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "OnBBits Template",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "description": "Use lowercase letters, numbers, and underscores only.",
+   "fieldname": "template_name",
+   "fieldtype": "Data",
+   "label": "Template Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Category",
+   "link_filters": "[[\"Template Category\",\"name\",\"!=\",\"AUTHENTICATION\"]]",
+   "options": "Template Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_aylg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Disabled"
+  },
+  {
+   "depends_on": "eval: doc.template_type == \"TEXT\"",
+   "description": "Maximum 60 characters. Supports 1 parameter.",
+   "fieldname": "header_text",
+   "fieldtype": "Data",
+   "label": "Header Text",
+   "length": 60,
+   "mandatory_depends_on": "eval: doc.template_type == \"TEXT\""
+  },
+  {
+   "depends_on": "eval: doc.template_type == \"TEXT\"",
+   "fieldname": "header_parameter",
+   "fieldtype": "Data",
+   "label": "Header Parameter"
+  },
+  {
+   "default": "en_US",
+   "fieldname": "language",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Language",
+   "options": "en_US\nhi\ngu",
+   "reqd": 1
+  },
+  {
+   "default": "POSITIONAL",
+   "fieldname": "format",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Format",
+   "options": "POSITIONAL\nNAMED"
+  },
+  {
+   "fieldname": "section_break_bdxc",
+   "fieldtype": "Section Break",
+   "label": "Template Body"
+  },
+  {
+   "description": "Use text formatting - *bold* , _italic_ &amp; ~strikethrough~\nYour message content. <br>\nUpto <b>1024 characters</b> are allowed.<br>\ne.g. - Hello {{1}}, your code will expire in {{2}} mins.",
+   "fieldname": "body_text",
+   "fieldtype": "Small Text",
+   "label": "Body Text",
+   "mandatory_depends_on": "eval: doc.category != \"AUTHENTICATION\"",
+   "width": "1024"
+  },
+  {
+   "fieldname": "template_parameters",
+   "fieldtype": "Table",
+   "label": "Template Parameters",
+   "options": "Template Parameter"
+  },
+  {
+   "fieldname": "template_footer_section",
+   "fieldtype": "Section Break",
+   "label": "Template Footer"
+  },
+  {
+   "description": "Maximum 60 characters",
+   "fieldname": "footer_text",
+   "fieldtype": "Data",
+   "label": "Footer Text",
+   "length": 60
+  },
+  {
+   "fieldname": "template_buttons",
+   "fieldtype": "Table",
+   "label": "Template Buttons",
+   "options": "Template Button"
+  },
+  {
+   "fieldname": "template_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Template Type",
+   "options": "\nTEXT"
+  },
+  {
+   "fieldname": "app_name",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "App Name",
+   "options": "OnBBits WA Setting",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "app_name.abbr",
+   "fieldname": "app_abb",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "App Abb",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "app_name.api_key",
+   "fieldname": "api_key",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "API Key",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "app_name.api_url",
+   "fieldname": "api_url",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "API URL",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Pending\nApproved\nRejected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_rkms",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "body_preview",
+   "fieldtype": "HTML"
+  },
+  {
+   "default": "Frappe",
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Source",
+   "options": "Frappe\nOnBBits",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-01-20 10:26:26.780395",
+ "modified_by": "Administrator",
+ "module": "Onbbits Integration",
+ "name": "OnBBits Template",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "search_fields": "app_name, category",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

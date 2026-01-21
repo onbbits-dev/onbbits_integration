@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-09 17:28:38.998517",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "onbbits_app_name",
+  "whatsapp_template",
+  "template_name",
+  "language",
+  "message_sent_to",
+  "column_break_prxk",
+  "reference_doctype",
+  "event",
+  "disabled",
+  "auto_create_msg_to",
+  "template_body",
+  "section_break_mbhq",
+  "template_parameters"
+ ],
+ "fields": [
+  {
+   "fieldname": "whatsapp_template",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "WhatsApp Template",
+   "options": "OnBBits Template",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_prxk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reference_doctype",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Reference Doctype",
+   "link_filters": "[[\"DocType\",\"issingle\",\"=\",0],[\"DocType\",\"istable\",\"=\",0]]",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "event",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Event",
+   "options": "\nInsert\nSubmit\nCancelled\nUpdate"
+  },
+  {
+   "fieldname": "section_break_mbhq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "template_parameters",
+   "fieldtype": "Table",
+   "label": "Template Parameters",
+   "options": "Template Trigger Parameter"
+  },
+  {
+   "fieldname": "onbbits_app_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "App Name",
+   "options": "OnBBits WA Setting",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "message_sent_to",
+   "fieldtype": "Autocomplete",
+   "label": "Message Sent To",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_create_msg_to",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Auto Create \"Message Sent To\" Field"
+  },
+  {
+   "fetch_from": "whatsapp_template.language",
+   "fieldname": "language",
+   "fieldtype": "Data",
+   "label": "Language"
+  },
+  {
+   "fetch_from": "whatsapp_template.template_name",
+   "fieldname": "template_name",
+   "fieldtype": "Data",
+   "label": "Template Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "whatsapp_template.body_text",
+   "fieldname": "template_body",
+   "fieldtype": "Small Text",
+   "label": "Template Body",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-12 17:16:19.580830",
+ "modified_by": "Administrator",
+ "module": "Onbbits Integration",
+ "name": "OnBBits Template Trigger",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
