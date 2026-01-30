@@ -1,8 +1,17 @@
-### Onbbits Integration
+# Onbbits Integration
 
-The OnBBits Integration App is a Frappe-based extension designed to seamlessly connect your ERP system with the OnBBits WhatsApp Messaging Platform.
+OnBBits Integration is an app that seamlessly connects your ERP system with the OnBBits WhatsApp Messaging Platform, enabling automated messaging, template management, and real-time WhatsApp communication directly from Frappe / ERPNext.
 
-### Installation
+## Features
+
+- Integration with the OnBBits WhatsApp Messaging Platform
+- Template synchronization and status tracking
+- Automatic WhatsApp message triggering based on document events
+- Multi-app support
+- Secure API-based authentication
+
+
+## Installation
 
 You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
@@ -12,22 +21,17 @@ bench get-app $URL_OF_THIS_REPO --branch develop
 bench install-app onbbits_integration
 ```
 
-### Contributing
+## Quick Start
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
+- Get your **API Key** from the OnBBits Portal.
+- Go to **OnBBits Integration → OnBBits WA Setting** and add the API Key.
+- Sync WhatsApp templates from **OnBBits Templates**.
+- Create automatic message rules using **WhatsApp Template Trigger**.
 
-```bash
-cd apps/onbbits_integration
-pre-commit install
-```
+## Documentation
+Detailed setup instructions and screenshots are available here:
+https://docs.google.com/document/d/1po81UGTuki9pyUNxS5IpUteXIsOC8EfymDvwdRK1c1g/edit?tab=t.0 
 
-Pre-commit is configured to use the following tools for checking and formatting your code:
-
-- ruff
-- eslint
-- prettier
-- pyupgrade
-
-### License
+## License
 
 mit
