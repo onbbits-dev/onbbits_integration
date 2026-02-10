@@ -45,6 +45,7 @@
    "default": "https://api.onbbits.io",
    "fieldname": "api_url",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "API URL",
    "read_only": 1
   },
@@ -113,7 +114,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-12 14:35:44.986829",
+ "modified": "2026-01-30 10:55:50.674507",
  "modified_by": "Administrator",
  "module": "Onbbits Integration",
  "name": "OnBBits WA Setting",
