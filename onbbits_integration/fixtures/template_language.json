@@ -1,0 +1,890 @@
+[
+ {
+  "code": "sq",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Albanian",
+  "modified": "2026-02-27 15:43:00.695808",
+  "name": "sq"
+ },
+ {
+  "code": "ar",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Arabic",
+  "modified": "2026-02-27 15:43:00.714551",
+  "name": "ar"
+ },
+ {
+  "code": "ar_EG",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Arabic (EGY)",
+  "modified": "2026-02-27 15:43:00.719303",
+  "name": "ar_EG"
+ },
+ {
+  "code": "ar_AE",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Arabic (UAE)",
+  "modified": "2026-02-27 15:43:00.723294",
+  "name": "ar_AE"
+ },
+ {
+  "code": "ar_LB",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Arabic (LBN)",
+  "modified": "2026-02-27 15:43:00.727381",
+  "name": "ar_LB"
+ },
+ {
+  "code": "ar_MA",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Arabic (MAR)",
+  "modified": "2026-02-27 15:43:00.731234",
+  "name": "ar_MA"
+ },
+ {
+  "code": "ar_QA",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Arabic (QAT)",
+  "modified": "2026-02-27 15:43:00.737708",
+  "name": "ar_QA"
+ },
+ {
+  "code": "az",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Azerbaijani",
+  "modified": "2026-02-27 15:43:00.744289",
+  "name": "az"
+ },
+ {
+  "code": "be_BY",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Belarusian",
+  "modified": "2026-02-27 15:43:00.749196",
+  "name": "be_BY"
+ },
+ {
+  "code": "bn",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Bengali",
+  "modified": "2026-02-27 15:43:00.753820",
+  "name": "bn"
+ },
+ {
+  "code": "bn_IN",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Bengali (IND)",
+  "modified": "2026-02-27 15:43:00.757539",
+  "name": "bn_IN"
+ },
+ {
+  "code": "bg",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Bulgarian",
+  "modified": "2026-02-27 15:43:00.763174",
+  "name": "bg"
+ },
+ {
+  "code": "ca",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Catalan",
+  "modified": "2026-02-27 15:43:00.767310",
+  "name": "ca"
+ },
+ {
+  "code": "zh_CN",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Chinese (CHN)",
+  "modified": "2026-02-27 15:43:00.771132",
+  "name": "zh_CN"
+ },
+ {
+  "code": "zh_HK",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Chinese (HKG)",
+  "modified": "2026-02-27 15:43:00.774738",
+  "name": "zh_HK"
+ },
+ {
+  "code": "zh_TW",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Chinese (TAI)",
+  "modified": "2026-02-27 15:43:00.779132",
+  "name": "zh_TW"
+ },
+ {
+  "code": "hr",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Croatian",
+  "modified": "2026-02-27 15:43:00.783481",
+  "name": "hr"
+ },
+ {
+  "code": "cs",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Czech",
+  "modified": "2026-02-27 15:43:00.787395",
+  "name": "cs"
+ },
+ {
+  "code": "da",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Danish",
+  "modified": "2026-02-27 15:43:00.791318",
+  "name": "da"
+ },
+ {
+  "code": "prs_AF",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Dari",
+  "modified": "2026-02-27 15:43:00.795553",
+  "name": "prs_AF"
+ },
+ {
+  "code": "nl",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Dutch",
+  "modified": "2026-02-27 15:43:00.799504",
+  "name": "nl"
+ },
+ {
+  "code": "nl_BE",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Dutch (BEL)",
+  "modified": "2026-02-27 15:43:00.805988",
+  "name": "nl_BE"
+ },
+ {
+  "code": "en",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "English",
+  "modified": "2026-02-27 15:43:00.810693",
+  "name": "en"
+ },
+ {
+  "code": "en_GB",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "English (UK)",
+  "modified": "2026-02-27 15:43:00.814419",
+  "name": "en_GB"
+ },
+ {
+  "code": "en_US",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "English (US)",
+  "modified": "2026-02-27 15:43:00.818530",
+  "name": "en_US"
+ },
+ {
+  "code": "en_AE",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "English (UAE)",
+  "modified": "2026-02-27 15:43:00.822047",
+  "name": "en_AE"
+ },
+ {
+  "code": "en_AU",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "English (AUS)",
+  "modified": "2026-02-27 15:43:00.825586",
+  "name": "en_AU"
+ },
+ {
+  "code": "en_CA",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "English (CAN)",
+  "modified": "2026-02-27 15:43:00.829847",
+  "name": "en_CA"
+ },
+ {
+  "code": "en_GH",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "English (GHA)",
+  "modified": "2026-02-27 15:43:00.833434",
+  "name": "en_GH"
+ },
+ {
+  "code": "en_IE",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "English (IRL)",
+  "modified": "2026-02-27 15:43:00.846046",
+  "name": "en_IE"
+ },
+ {
+  "code": "en_IN",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "English (IND)",
+  "modified": "2026-02-27 15:43:00.850402",
+  "name": "en_IN"
+ },
+ {
+  "code": "en_JM",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "English (JAM)",
+  "modified": "2026-02-27 15:43:00.854776",
+  "name": "en_JM"
+ },
+ {
+  "code": "en_MY",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "English (MYS)",
+  "modified": "2026-02-27 15:43:00.862359",
+  "name": "en_MY"
+ },
+ {
+  "code": "en_NZ",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "English (NZL)",
+  "modified": "2026-02-27 15:43:00.871042",
+  "name": "en_NZ"
+ },
+ {
+  "code": "en_QA",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "English (QAT)",
+  "modified": "2026-02-27 15:43:00.876549",
+  "name": "en_QA"
+ },
+ {
+  "code": "en_SG",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "English (SGP)",
+  "modified": "2026-02-27 15:43:00.880396",
+  "name": "en_SG"
+ },
+ {
+  "code": "en_UG",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "English (UGA)",
+  "modified": "2026-02-27 15:43:00.884401",
+  "name": "en_UG"
+ },
+ {
+  "code": "en_ZA",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "English (ZAF)",
+  "modified": "2026-02-27 15:43:00.888410",
+  "name": "en_ZA"
+ },
+ {
+  "code": "et",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Estonian",
+  "modified": "2026-02-27 15:43:00.892544",
+  "name": "et"
+ },
+ {
+  "code": "fil",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Filipino",
+  "modified": "2026-02-27 15:43:00.896107",
+  "name": "fil"
+ },
+ {
+  "code": "fi",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Finnish",
+  "modified": "2026-02-27 15:43:00.899790",
+  "name": "fi"
+ },
+ {
+  "code": "fr",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "French",
+  "modified": "2026-02-27 15:43:00.903170",
+  "name": "fr"
+ },
+ {
+  "code": "fr_BE",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "French (BEL)",
+  "modified": "2026-02-27 15:43:00.906564",
+  "name": "fr_BE"
+ },
+ {
+  "code": "fr_CA",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "French (CAN)",
+  "modified": "2026-02-27 15:43:00.910809",
+  "name": "fr_CA"
+ },
+ {
+  "code": "fr_CH",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "French (CHE)",
+  "modified": "2026-02-27 15:43:00.914137",
+  "name": "fr_CH"
+ },
+ {
+  "code": "fr_CI",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "French (CIV)",
+  "modified": "2026-02-27 15:43:00.918167",
+  "name": "fr_CI"
+ },
+ {
+  "code": "fr_MA",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "French (MAR)",
+  "modified": "2026-02-27 15:43:00.923047",
+  "name": "fr_MA"
+ },
+ {
+  "code": "ka",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Georgian",
+  "modified": "2026-02-27 15:43:00.926890",
+  "name": "ka"
+ },
+ {
+  "code": "de",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "German",
+  "modified": "2026-02-27 15:43:00.930826",
+  "name": "de"
+ },
+ {
+  "code": "de_AT",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "German (AUT)",
+  "modified": "2026-02-27 15:43:00.934768",
+  "name": "de_AT"
+ },
+ {
+  "code": "de_CH",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "German (CHE)",
+  "modified": "2026-02-27 15:43:00.938434",
+  "name": "de_CH"
+ },
+ {
+  "code": "el",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Greek",
+  "modified": "2026-02-27 15:43:00.942073",
+  "name": "el"
+ },
+ {
+  "code": "gu",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Gujarati",
+  "modified": "2026-02-27 15:43:00.945892",
+  "name": "gu"
+ },
+ {
+  "code": "ha",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Hausa",
+  "modified": "2026-02-27 15:43:00.950163",
+  "name": "ha"
+ },
+ {
+  "code": "he",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Hebrew",
+  "modified": "2026-02-27 15:43:00.954077",
+  "name": "he"
+ },
+ {
+  "code": "hi",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Hindi",
+  "modified": "2026-02-27 15:43:00.957583",
+  "name": "hi"
+ },
+ {
+  "code": "hu",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Hungarian",
+  "modified": "2026-02-27 15:43:00.961276",
+  "name": "hu"
+ },
+ {
+  "code": "id",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Indonesian",
+  "modified": "2026-02-27 15:43:00.964977",
+  "name": "id"
+ },
+ {
+  "code": "ga",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Irish",
+  "modified": "2026-02-27 15:43:00.968680",
+  "name": "ga"
+ },
+ {
+  "code": "it",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Italian",
+  "modified": "2026-02-27 15:43:00.972527",
+  "name": "it"
+ },
+ {
+  "code": "ja",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Japanese",
+  "modified": "2026-02-27 15:43:00.976422",
+  "name": "ja"
+ },
+ {
+  "code": "kn",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Kannada",
+  "modified": "2026-02-27 15:43:00.981073",
+  "name": "kn"
+ },
+ {
+  "code": "kk",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Kazakh",
+  "modified": "2026-02-27 15:43:00.985110",
+  "name": "kk"
+ },
+ {
+  "code": "rw_RW",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Kinyarwanda",
+  "modified": "2026-02-27 15:43:00.988809",
+  "name": "rw_RW"
+ },
+ {
+  "code": "ko",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Korean",
+  "modified": "2026-02-27 15:43:00.992757",
+  "name": "ko"
+ },
+ {
+  "code": "ky_KG",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Kyrgyz (Kyrgyzstan)",
+  "modified": "2026-02-27 15:43:00.996898",
+  "name": "ky_KG"
+ },
+ {
+  "code": "lo",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Lao",
+  "modified": "2026-02-27 15:43:01.000602",
+  "name": "lo"
+ },
+ {
+  "code": "lv",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Latvian",
+  "modified": "2026-02-27 15:43:01.004312",
+  "name": "lv"
+ },
+ {
+  "code": "lt",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Lithuanian",
+  "modified": "2026-02-27 15:43:01.007931",
+  "name": "lt"
+ },
+ {
+  "code": "mk",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Macedonian",
+  "modified": "2026-02-27 15:43:01.011707",
+  "name": "mk"
+ },
+ {
+  "code": "ms",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Malay",
+  "modified": "2026-02-27 15:43:01.015322",
+  "name": "ms"
+ },
+ {
+  "code": "ml",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Malayalam",
+  "modified": "2026-02-27 15:43:01.019912",
+  "name": "ml"
+ },
+ {
+  "code": "mr",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Marathi",
+  "modified": "2026-02-27 15:43:01.026927",
+  "name": "mr"
+ },
+ {
+  "code": "nb",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Norwegian",
+  "modified": "2026-02-27 15:43:01.030820",
+  "name": "nb"
+ },
+ {
+  "code": "ps_AF",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Pashto",
+  "modified": "2026-02-27 15:43:01.034511",
+  "name": "ps_AF"
+ },
+ {
+  "code": "fa",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Persian",
+  "modified": "2026-02-27 15:43:01.038886",
+  "name": "fa"
+ },
+ {
+  "code": "pl",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Polish",
+  "modified": "2026-02-27 15:43:01.043488",
+  "name": "pl"
+ },
+ {
+  "code": "pt_BR",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Portuguese (BR)",
+  "modified": "2026-02-27 15:43:01.050611",
+  "name": "pt_BR"
+ },
+ {
+  "code": "pt_PT",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Portuguese (POR)",
+  "modified": "2026-02-27 15:43:01.054401",
+  "name": "pt_PT"
+ },
+ {
+  "code": "pa",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Punjabi",
+  "modified": "2026-02-27 15:43:01.057882",
+  "name": "pa"
+ },
+ {
+  "code": "ro",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Romanian",
+  "modified": "2026-02-27 15:43:01.061389",
+  "name": "ro"
+ },
+ {
+  "code": "ru",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Russian",
+  "modified": "2026-02-27 15:43:01.064889",
+  "name": "ru"
+ },
+ {
+  "code": "sr",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Serbian",
+  "modified": "2026-02-27 15:43:01.068420",
+  "name": "sr"
+ },
+ {
+  "code": "si_LK",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Sinhala",
+  "modified": "2026-02-27 15:43:01.073146",
+  "name": "si_LK"
+ },
+ {
+  "code": "sk",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Slovak",
+  "modified": "2026-02-27 15:43:01.076590",
+  "name": "sk"
+ },
+ {
+  "code": "sl",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Slovenian",
+  "modified": "2026-02-27 15:43:01.080219",
+  "name": "sl"
+ },
+ {
+  "code": "es",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Spanish",
+  "modified": "2026-02-27 15:43:01.083658",
+  "name": "es"
+ },
+ {
+  "code": "es_AR",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Spanish (ARG)",
+  "modified": "2026-02-27 15:43:01.087961",
+  "name": "es_AR"
+ },
+ {
+  "code": "es_CL",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Spanish (CHL)",
+  "modified": "2026-02-27 15:43:01.093666",
+  "name": "es_CL"
+ },
+ {
+  "code": "es_CO",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Spanish (COL)",
+  "modified": "2026-02-27 15:43:01.097411",
+  "name": "es_CO"
+ },
+ {
+  "code": "es_CR",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Spanish (CRI)",
+  "modified": "2026-02-27 15:43:01.101009",
+  "name": "es_CR"
+ },
+ {
+  "code": "es_DO",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Spanish (DOM)",
+  "modified": "2026-02-27 15:43:01.104670",
+  "name": "es_DO"
+ },
+ {
+  "code": "es_EC",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Spanish (ECU)",
+  "modified": "2026-02-27 15:43:01.108134",
+  "name": "es_EC"
+ },
+ {
+  "code": "es_HN",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Spanish (HND)",
+  "modified": "2026-02-27 15:43:01.111768",
+  "name": "es_HN"
+ },
+ {
+  "code": "es_MX",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Spanish (MEX)",
+  "modified": "2026-02-27 15:43:01.115330",
+  "name": "es_MX"
+ },
+ {
+  "code": "es_PA",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Spanish (PAN)",
+  "modified": "2026-02-27 15:43:01.118729",
+  "name": "es_PA"
+ },
+ {
+  "code": "es_PE",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Spanish (PER)",
+  "modified": "2026-02-27 15:43:01.122184",
+  "name": "es_PE"
+ },
+ {
+  "code": "es_ES",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Spanish (SPA)",
+  "modified": "2026-02-27 15:43:01.125670",
+  "name": "es_ES"
+ },
+ {
+  "code": "es_UY",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Spanish (URY)",
+  "modified": "2026-02-27 15:43:01.129214",
+  "name": "es_UY"
+ },
+ {
+  "code": "sw",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Swahili",
+  "modified": "2026-02-27 15:43:01.133276",
+  "name": "sw"
+ },
+ {
+  "code": "sv",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Swedish",
+  "modified": "2026-02-27 15:43:01.136827",
+  "name": "sv"
+ },
+ {
+  "code": "ta",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Tamil",
+  "modified": "2026-02-27 15:43:01.140415",
+  "name": "ta"
+ },
+ {
+  "code": "te",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Telugu",
+  "modified": "2026-02-27 15:43:01.143809",
+  "name": "te"
+ },
+ {
+  "code": "th",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Thai",
+  "modified": "2026-02-27 15:43:01.147201",
+  "name": "th"
+ },
+ {
+  "code": "tr",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Turkish",
+  "modified": "2026-02-27 15:43:01.150586",
+  "name": "tr"
+ },
+ {
+  "code": "uk",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Ukrainian",
+  "modified": "2026-02-27 15:43:01.154051",
+  "name": "uk"
+ },
+ {
+  "code": "ur",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Urdu",
+  "modified": "2026-02-27 15:43:01.157922",
+  "name": "ur"
+ },
+ {
+  "code": "uz",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Uzbek",
+  "modified": "2026-02-27 15:43:01.161307",
+  "name": "uz"
+ },
+ {
+  "code": "vi",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Vietnamese",
+  "modified": "2026-02-27 15:43:01.164656",
+  "name": "vi"
+ },
+ {
+  "code": "zu",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Zulu",
+  "modified": "2026-02-27 15:43:01.168047",
+  "name": "zu"
+ },
+ {
+  "code": "af",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "Afrikaans",
+  "modified": "2026-02-27 15:43:39.384434",
+  "name": "af"
+ }
+]

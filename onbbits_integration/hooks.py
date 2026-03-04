@@ -256,6 +256,7 @@ scheduler_events = {
 # ignore_translatable_strings_from = []
 
 fixtures = [
+    "Template Language",
     "Template Category",
     {
         "dt": "Workspace",
