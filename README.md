@@ -40,7 +40,7 @@ To start using the app, you need your **API Key** from the OnBBits portal.
 3. Locate **API Key** in the side navigation.
 4. Copy the API Key.
 
-<img width="1560" height="1120" alt="API Key" src="https://github.com/user-attachments/assets/3cf3012a-3a03-4250-9371-a5a24ee5c496" />
+<img width="1560" height="1120" alt="API Key" src="docs/images/f_1.1.png" />
 
 ---
 
@@ -52,7 +52,7 @@ To start using the app, you need your **API Key** from the OnBBits portal.
 3. Paste the API Key.
 4. Click **Save**.
 
-<img width="1560" height="1120" alt="WA Settings" src="https://github.com/user-attachments/assets/f0885a17-feb8-4d48-927e-f997b33531ee" />
+<img width="1560" height="1120" alt="WA Settings" src="docs/images/f_1.2.png" />
 
 💡 You can manage multiple OnBBits apps from the same settings screen.
 
@@ -78,7 +78,7 @@ Here you can see:
 * Template Type
 * Status (Approved / Pending)
 
-<img width="2023" height="1119" alt="Template List" src="https://github.com/user-attachments/assets/b2701ca9-6a75-4420-942b-bd74fb3024c7" />
+<img width="2023" height="1119" alt="Template List" src="docs/images/f_1.3.png" />
 
 ---
 
@@ -88,9 +88,9 @@ Here you can see:
 2. Select the App
 3. Templates will be fetched from OnBBits
 
-<img width="2023" height="1119" alt="Sync Templates" src="https://github.com/user-attachments/assets/be3d0dea-6577-4968-b9cb-3dccedbc60e8" />
+<img width="2023" height="1119" alt="Sync Templates" src="docs/images/f_1.4.png" />
 
-<img width="2023" height="1119" alt="Templates Synced" src="https://github.com/user-attachments/assets/a12b7f17-3a91-4dc1-9d86-f50f52b58478" />
+<img width="2023" height="1119" alt="Templates Synced" src="docs/images/f_1.5.png" />
 
 Use this when:
 
@@ -109,7 +109,7 @@ You can also sync manually:
 1. Go to **WhatsApp Templates**
 2. Click **Sync Status**
 
-<img width="2023" height="1119" alt="Sync Status" src="https://github.com/user-attachments/assets/d3a8f110-98ff-4cf0-a292-c781db2ae751" />
+<img width="2023" height="1119" alt="Sync Status" src="docs/images/f_1.6.png" />
 
 ---
 
@@ -147,7 +147,7 @@ Automatically send WhatsApp messages when documents are created, updated, submit
 
 7. Click **Save**
 
-<img width="2032" height="1117" alt="Trigger Setup" src="https://github.com/user-attachments/assets/35dd5e7b-3bd8-4dac-a997-67068055b7d4" />
+<img width="2032" height="1117" alt="Trigger Setup" src="docs/images/f_1.7.png" />
 
 Mapped fields fetch data dynamically from the document.
 Static values remain constant for every message.
