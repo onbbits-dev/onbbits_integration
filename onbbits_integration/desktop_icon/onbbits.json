@@ -1,0 +1,22 @@
+{
+ "app": "onbbits_integration",
+ "bg_color": "gray",
+ "creation": "2026-03-24 12:24:16.274885",
+ "docstatus": 0,
+ "doctype": "Desktop Icon",
+ "hidden": 0,
+ "icon_image": "/files/OnBBits Logo.png",
+ "icon_type": "Link",
+ "idx": 0,
+ "label": "ONBBITS",
+ "link_to": "ONBBITS",
+ "link_type": "Workspace Sidebar",
+ "modified": "2026-03-24 12:48:39.659515",
+ "modified_by": "Administrator",
+ "name": "ONBBITS",
+ "owner": "Administrator",
+ "restrict_removal": 0,
+ "roles": [],
+ "sidebar": "ONBBITS",
+ "standard": 1
+}
