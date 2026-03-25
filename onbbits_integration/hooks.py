@@ -263,12 +263,6 @@ fixtures = [
         "filters": [
             ["name", "=", "ONBBITS"]
         ]
-    },
-    {
-        "dt": "File",
-        "filters": [
-            ["attached_to_doctype", "=", "Desktop Icon"]
-        ]
     }
 ]
 
