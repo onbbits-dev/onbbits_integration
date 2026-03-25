@@ -1,0 +1,84 @@
+{
+ "app": "onbbits_integration",
+ "charts": [],
+ "content": "[{\"id\":\"T5FiLPRFxa\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Welcome to the ONBBITS</span>\",\"col\":12}},{\"id\":\"t0Pm6zNzsM\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Onbbits Wa Setting\",\"col\":4}},{\"id\":\"s5uaycNikY\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Onbbits Template\",\"col\":4}},{\"id\":\"nOXrUIz2y5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Onbbits Template Trigger\",\"col\":4}},{\"id\":\"flJuOk2AHC\",\"type\":\"card\",\"data\":{\"card_name\":\"Masters\",\"col\":4}}]",
+ "creation": "2026-03-24 12:24:16.251080",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "ONBBITS",
+ "link_type": "DocType",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Masters",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Template Category",
+   "link_count": 0,
+   "link_to": "Template Category",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Template Language",
+   "link_count": 0,
+   "link_to": "Template Language",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-03-24 12:28:06.603848",
+ "modified_by": "Administrator",
+ "module": "Onbbits Integration",
+ "name": "ONBBITS",
+ "number_cards": [],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 0.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Onbbits Wa Setting",
+   "link_to": "OnBBits WA Setting",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Onbbits Template",
+   "link_to": "OnBBits Template",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Onbbits Template Trigger",
+   "link_to": "OnBBits Template Trigger",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "ONBBITS",
+ "type": "Workspace"
+}

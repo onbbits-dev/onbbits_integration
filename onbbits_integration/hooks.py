@@ -261,7 +261,7 @@ fixtures = [
     {
         "dt": "Workspace",
         "filters": [
-            ["name", "=", "OnBBits"]
+            ["name", "=", "ONBBITS"]
         ]
     }
 ]

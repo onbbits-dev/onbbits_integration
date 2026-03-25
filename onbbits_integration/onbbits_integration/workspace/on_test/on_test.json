@@ -1,0 +1,39 @@
+{
+ "app": "onbbits_integration",
+ "charts": [],
+ "content": "[{\"id\":\"6pnwA89ut4\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Welcome to the ON TEST workspace</span>\",\"col\":12}},{\"id\":\"azbmvtTjwq\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Onbbits Template Trigger\",\"col\":3}}]",
+ "creation": "2026-03-24 12:02:56.941117",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 1,
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "ON TEST",
+ "link_type": "DocType",
+ "links": [],
+ "modified": "2026-03-24 12:06:33.822752",
+ "modified_by": "Administrator",
+ "module": "Onbbits Integration",
+ "name": "ON TEST",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "ON TEST",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 0.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Onbbits Template Trigger",
+   "link_to": "OnBBits Template Trigger",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "ON TEST",
+ "type": "Workspace"
+}

@@ -1,0 +1,28 @@
+{
+ "app": "onbbits_integration",
+ "creation": "2026-03-24 12:24:16.265950",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "header_icon": "app-window-mac",
+ "idx": 3,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "ONBBITS",
+   "link_to": "ONBBITS",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-03-24 12:49:07.166320",
+ "modified_by": "Administrator",
+ "module": "Onbbits Integration",
+ "name": "ONBBITS",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "ONBBITS"
+}

@@ -1,0 +1,72 @@
+name: Server Tests (v16)
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    services:
+      mariadb:
+        image: mariadb:11
+        env:
+          MYSQL_ROOT_PASSWORD: root
+        ports:
+          - 3306:3306
+
+      redis:
+        image: redis:7
+        ports:
+          - 6379:6379
+
+    steps:
+      - name: Checkout App
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Install Bench
+        run: pip install frappe-bench
+
+      - name: Init Bench
+        run: |
+          bench init frappe-bench --skip-redis-config-generation
+          cd frappe-bench
+
+      - name: Get Frappe v16
+        run: |
+          cd frappe-bench
+          bench get-app frappe --branch version-16
+
+      - name: Link Your App
+        run: |
+          cd frappe-bench/apps
+          ln -s $GITHUB_WORKSPACE onbbits_integration
+
+      - name: Create Site
+        run: |
+          cd frappe-bench
+          bench new-site test_site \
+            --admin-password admin \
+            --mariadb-root-password root \
+            --db-host 127.0.0.1
+
+      - name: Install App
+        run: |
+          cd frappe-bench
+          bench --site test_site install-app onbbits_integration
+
+      - name: Run Tests
+        run: |
+          cd frappe-bench
+          bench --site test_site run-tests --app onbbits_integration
