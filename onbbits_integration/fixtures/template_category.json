@@ -1,1 +1,23 @@
-[]
+[
+ {
+  "category": "AUTHENTICATION",
+  "docstatus": 0,
+  "doctype": "Template Category",
+  "modified": "2026-01-12 14:27:58.580036",
+  "name": "AUTHENTICATION"
+ },
+ {
+  "category": "UTILITY",
+  "docstatus": 0,
+  "doctype": "Template Category",
+  "modified": "2026-01-12 12:52:40.144445",
+  "name": "UTILITY"
+ },
+ {
+  "category": "MARKETING",
+  "docstatus": 0,
+  "doctype": "Template Category",
+  "modified": "2026-01-12 14:27:46.540210",
+  "name": "MARKETING"
+ }
+]
