@@ -257,6 +257,7 @@ scheduler_events = {
 
 fixtures = [
     "Template Language", "Template Category",
+    {"dt": "Client Script", "filters": [["name", "=", "ONBBITS"]]}, 
     {"dt": "Workspace", "filters": [["name", "=", "ONBBITS"]]}, 
     {"dt": "Property Setter","filters": [["module", "=", "Onbbits Integration"]]}
 ]

@@ -192,14 +192,6 @@
   "name": "en_GB"
  },
  {
-  "code": "en_US",
-  "docstatus": 0,
-  "doctype": "Template Language",
-  "language_name": "English (US)",
-  "modified": "2026-02-27 15:43:00.818530",
-  "name": "en_US"
- },
- {
   "code": "en_AE",
   "docstatus": 0,
   "doctype": "Template Language",
@@ -886,5 +878,13 @@
   "language_name": "Afrikaans",
   "modified": "2026-02-27 15:43:39.384434",
   "name": "af"
+ },
+ {
+  "code": "en_US",
+  "docstatus": 0,
+  "doctype": "Template Language",
+  "language_name": "English (US)",
+  "modified": "2026-02-27 15:43:00.818530",
+  "name": "en_US"
  }
 ]

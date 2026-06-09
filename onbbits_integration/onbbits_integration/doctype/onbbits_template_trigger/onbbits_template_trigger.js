@@ -5,7 +5,7 @@ frappe.ui.form.on("OnBBits Template Trigger", {
     refresh(frm) {
         whatsapp_template_filter(frm);
         custom_buttons(frm)
-        // update_message_sent_to(frm)
+        update_message_sent_to(frm)
         mapping_field(frm)
     },
     app_name(frm) {

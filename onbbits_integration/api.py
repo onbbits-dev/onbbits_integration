@@ -70,19 +70,47 @@ def validate_onbbits_event(doc, method):
             fields=["reference_field", "parameter"]
         )
 
+        # for p in params:
+        #     fieldname = p.reference_field
+        #     frappe.log_error(f"params fieldname = {fieldname}")
+
+        #     # Validate mandatory fields before event
+        #     if hasattr(doc, fieldname):
+        #         value = doc.get(fieldname)
+
+        #         if not value:
+        #             frappe.throw(
+        #                 f"Missing mandatory field <b>{fieldname}</b> required for "
+        #                 f"WhatsApp Template (Parameter #{p.parameter}).<br>"
+        #                 f"This field must be filled before <b>{current_event}</b>."
+        #             )
+
+        params = frappe.get_all(
+            "Template Trigger Parameter",
+            filters={"parent": trg.name},
+            fields=["reference_field", "static_value", "parameter"]
+        )
+
         for p in params:
+            # Static value supplied, no document validation needed
+            if p.static_value:
+                continue
+
             fieldname = p.reference_field
 
-            # Validate mandatory fields before event
-            if hasattr(doc, fieldname):
-                value = doc.get(fieldname)
+            if not fieldname:
+                frappe.throw(
+                    f"Parameter #{p.parameter} must have either "
+                    f"a Reference Field or a Static Value."
+                )
 
-                if not value:
-                    frappe.throw(
-                        f"Missing mandatory field <b>{fieldname}</b> required for "
-                        f"WhatsApp Template (Parameter #{p.parameter}).<br>"
-                        f"This field must be filled before <b>{current_event}</b>."
-                    )
+            value = doc.get(fieldname)
+
+            if not value:
+                frappe.throw(
+                    f"Missing mandatory field <b>{fieldname}</b> required for "
+                    f"WhatsApp Template (Parameter #{p.parameter})."
+                )
 
         send_onbbits_template(doc, trg.name)
 
