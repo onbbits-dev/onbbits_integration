@@ -5,7 +5,7 @@ frappe.ui.form.on("OnBBits Template Trigger", {
     refresh(frm) {
         whatsapp_template_filter(frm);
         custom_buttons(frm)
-        update_message_sent_to(frm)
+        // update_message_sent_to(frm)
         mapping_field(frm)
     },
     app_name(frm) {
@@ -18,6 +18,14 @@ frappe.ui.form.on("OnBBits Template Trigger", {
     reference_doctype(frm) {
         mapping_field(frm);
         update_message_sent_to(frm)
+    },
+    media_source(frm) {
+        if (frm.doc.media_source === "Document Field") {
+            update_attach(frm);
+        }
+        else if(frm.doc.media_source === "Print Format PDF"){
+            print_format_filter(frm);
+        }
     }
 });
 
@@ -27,6 +35,16 @@ function whatsapp_template_filter(frm){
             filters: {
                 app_name: frm.doc.onbbits_app_name,
                 status: "APPROVED"
+            }
+        };
+    });
+}
+
+function print_format_filter(frm){
+    frm.set_query("print_format", function() {
+        return {
+            filters: {
+                doc_type: frm.doc.reference_doctype
             }
         };
     });
@@ -100,6 +118,32 @@ function update_message_sent_to(frm) {
     });
 }
 
+function update_attach(frm) {
+    if (!frm.doc.reference_doctype) return;
+
+    frappe.call({
+        method: "onbbits_integration.api.get_attach_fields",
+        args: { doctype: frm.doc.reference_doctype },
+        callback(r) {
+            if (r.message && r.message.length > 0) {
+                // Populate Autocomplete
+                frm.fields_dict.document_field_name.set_data(r.message);
+            } else {
+                frappe.msgprint({
+                    title: __("No Attach Fields Found"),
+                    message: __(
+                        `No attach fields exist in this DocType. First create an <b>Attach</b> field in the DocType <b>${frm.doc.reference_doctype}</b> to attach documents in the message.`
+                    ),
+                    indicator: "orange"
+                });
+
+                // Clear existing options
+                frm.fields_dict.document_field_name.set_data([]);
+            }
+        }
+    });
+}
+
 function custom_buttons(frm){
     if (frm.doc.reference_doctype) {
         frm.add_custom_button(__('Auto Create "Message Sent To" Field'), () => {
@@ -157,4 +201,3 @@ frappe.ui.form.on("Template Trigger Parameter", {
         }
     }
 });
-

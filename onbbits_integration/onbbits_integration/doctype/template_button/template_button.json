@@ -17,7 +17,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Button Type",
-   "options": "\nQUICK_REPLY\nURL\nPHONE_NUMBER\nOTP",
+   "options": "\nQUICK_REPLY\nURL\nPHONE_NUMBER\nOTP\nFLOW",
    "reqd": 1
   },
   {
@@ -50,7 +50,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-01-12 14:50:34.395876",
+ "modified": "2026-06-08 09:37:11.551493",
  "modified_by": "Administrator",
  "module": "Onbbits Integration",
  "name": "Template Button",
