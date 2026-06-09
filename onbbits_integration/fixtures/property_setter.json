@@ -1,0 +1,34 @@
+[
+ {
+  "default_value": null,
+  "doc_type": "OnBBits Template Trigger",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "naming_series",
+  "is_system_generated": 1,
+  "modified": "2026-06-09 14:23:52.243819",
+  "module": "Onbbits Integration",
+  "name": "OnBBits Template Trigger-naming_series-options",
+  "property": "options",
+  "property_type": "Text",
+  "row_name": null,
+  "value": "OTT-"
+ },
+ {
+  "default_value": null,
+  "doc_type": "OnBBits Template Trigger",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "naming_series",
+  "is_system_generated": 1,
+  "modified": "2026-06-09 14:23:52.197830",
+  "module": "Onbbits Integration",
+  "name": "OnBBits Template Trigger-naming_series-default",
+  "property": "default",
+  "property_type": "Text",
+  "row_name": null,
+  "value": "OTT-"
+ }
+]
