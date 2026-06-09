@@ -35,7 +35,7 @@ def validate_onbbits_event(doc, method):
             "event": current_event,
             "disabled": 0
         },
-        fields=["name", "message_sent_to"]
+        fields=["name", "message_sent_to", "document_field_name"]
     )
 
     if not triggers:
@@ -43,6 +43,8 @@ def validate_onbbits_event(doc, method):
 
     for trg in triggers:
         sent_to_field = trg.get("message_sent_to")
+        document_field = trg.get("document_field_name")
+
         if sent_to_field:
             if hasattr(doc, sent_to_field):
                 message_sent_to = doc.get(sent_to_field)
@@ -51,6 +53,17 @@ def validate_onbbits_event(doc, method):
                         f"The field <b>{sent_to_field}</b> (Message Sent To) is mandatory "
                         f"for WhatsApp Template <b>{trg.name}</b> before <b>{current_event}</b>."
                     )
+
+        if document_field:
+            value = doc.get(document_field)
+
+            if not value:
+                frappe.throw(
+                    f"The field <b>{document_field}</b> is mandatory "
+                    f"for WhatsApp Template <b>{trg.name}</b> before "
+                    f"<b>{current_event}</b>."
+                )
+
         params = frappe.get_all(
             "Template Trigger Parameter",
             filters={"parent": trg.name},
@@ -72,6 +85,7 @@ def validate_onbbits_event(doc, method):
                     )
 
         send_onbbits_template(doc, trg.name)
+
 @frappe.whitelist()
 def get_phone_fields(doctype):
     meta = frappe.get_meta(doctype)
@@ -80,9 +94,17 @@ def get_phone_fields(doctype):
         # include only usable fieldtypes
         if df.fieldtype in ["Phone"]:
             phone_fields.append(df.fieldname)
-
-
     return phone_fields
+
+@frappe.whitelist()
+def get_attach_fields(doctype):
+    meta = frappe.get_meta(doctype)
+    attach_fields = []
+    for df in meta.fields:
+        # include only usable fieldtypes
+        if df.fieldtype in ["Attach"]:
+            attach_fields.append(df.fieldname)
+    return attach_fields
 
 @frappe.whitelist()
 def auto_create_msg_sent_to_field(doctype):
