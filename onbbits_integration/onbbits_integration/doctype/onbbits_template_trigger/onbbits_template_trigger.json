@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-12-09 17:28:38.998517",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -9,13 +10,19 @@
   "whatsapp_template",
   "template_name",
   "language",
-  "message_sent_to",
+  "template_type",
+  "media_source",
+  "print_format",
+  "static_file",
+  "document_field_name",
   "column_break_prxk",
-  "reference_doctype",
-  "event",
   "disabled",
   "auto_create_msg_to",
+  "reference_doctype",
+  "event",
+  "message_sent_to",
   "template_body",
+  "naming_series",
   "section_break_mbhq",
   "template_parameters"
  ],
@@ -92,8 +99,10 @@
   {
    "fetch_from": "whatsapp_template.language",
    "fieldname": "language",
-   "fieldtype": "Data",
-   "label": "Language"
+   "fieldtype": "Link",
+   "label": "Language",
+   "options": "Template Language",
+   "read_only": 1
   },
   {
    "fetch_from": "whatsapp_template.template_name",
@@ -108,15 +117,58 @@
    "fieldtype": "Small Text",
    "label": "Template Body",
    "read_only": 1
+  },
+  {
+   "fetch_from": "whatsapp_template.template_type",
+   "fieldname": "template_type",
+   "fieldtype": "Data",
+   "label": "Template Type",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: doc.template_type != \"TEXT\" && doc.template_type != \"\"",
+   "fieldname": "media_source",
+   "fieldtype": "Select",
+   "label": "Media Source",
+   "options": "\nStatic File\nPrint Format PDF\nDocument Field"
+  },
+  {
+   "depends_on": "eval:doc.media_source == \"Print Format PDF\"",
+   "description": "Leave blank to use Standard Print Format",
+   "fieldname": "print_format",
+   "fieldtype": "Link",
+   "label": "Print Format",
+   "options": "Print Format"
+  },
+  {
+   "depends_on": "eval:doc.media_source == \"Static File\"",
+   "fieldname": "static_file",
+   "fieldtype": "Attach",
+   "label": "Static File",
+   "mandatory_depends_on": "eval:doc.media_source == \"Static File\""
+  },
+  {
+   "depends_on": "eval:doc.media_source == \"Document Field\"",
+   "fieldname": "document_field_name",
+   "fieldtype": "Autocomplete",
+   "label": "Document Field Name",
+   "mandatory_depends_on": "eval:doc.media_source == \"Document Field\""
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-12 17:16:19.580830",
+ "modified": "2026-06-10 10:31:36.098954",
  "modified_by": "Administrator",
  "module": "Onbbits Integration",
  "name": "OnBBits Template Trigger",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

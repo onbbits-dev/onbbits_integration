@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "OnBBits Template",
+  "enabled": 1,
+  "modified": "2026-06-10 10:38:07.592668",
+  "module": "Onbbits Integration",
+  "name": "Hide select option FLOW",
+  "script": "frappe.ui.form.on(\"OnBBits Template\", {\n    refresh(frm) {\n        frm.fields_dict.template_buttons.grid.update_docfield_property(\n            \"button_type\",\n            \"options\",\n            \"QUICK_REPLY\\nURL\\nPHONE_NUMBER\\nOTP\"\n        );\n    }\n});",
+  "view": "Form"
+ }
+]

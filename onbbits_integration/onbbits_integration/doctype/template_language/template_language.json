@@ -28,9 +28,10 @@
   }
  ],
  "grid_page_length": 50,
+ "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-27 15:41:22.660695",
+ "modified": "2026-06-10 09:54:50.765910",
  "modified_by": "Administrator",
  "module": "Onbbits Integration",
  "name": "Template Language",
@@ -48,11 +49,18 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "read": 1,
+   "role": "All",
+   "select": 1
   }
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "language_name"
 }

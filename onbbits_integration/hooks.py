@@ -256,13 +256,9 @@ scheduler_events = {
 # ignore_translatable_strings_from = []
 
 fixtures = [
-    "Template Language",
-    "Template Category",
-    {
-        "dt": "Workspace",
-        "filters": [
-            ["name", "=", "ONBBITS"]
-        ]
-    }
+    "Template Language","Template Category",
+    {"dt": "Client Script", "filters": [["module", "=", "Onbbits Integration"]]}, 
+    {"dt": "Property Setter","filters": [["module", "=", "Onbbits Integration"]]},
+    {"dt": "Workspace","filters": [["name", "=", "ONBBITS"]]}
 ]
 
